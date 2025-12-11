@@ -111,9 +111,9 @@ We utilized the **Credit Card Fraud Detection and Loan Approval Prediction Datas
 
 ## 📸 Screenshots
 
-| Landing Page | Fraud Detection | Loan Approval |
-| :---: | :---: | :---: |
-| ![Landing](https://via.placeholder.com/300x150?text=Landing+Page) | ![Fraud](https://via.placeholder.com/300x150?text=Fraud+Detection) | ![Loan](https://via.placeholder.com/300x150?text=Loan+Prediction) |
+| Landing Page | Fraud Detection | Loan Approval | Expense Tracker |
+| :---: | :---: | :---: | :---: |
+| ![Landing](https://via.placeholder.com/300x150?text=Landing+Page) | ![Fraud](https://via.placeholder.com/300x150?text=Fraud+Detection) | ![Loan](https://via.placeholder.com/300x150?text=Loan+Prediction) |![Expenses](https://via.placeholder.com/300x150?text=Expense+Tracker) |
 
 *(Note: Replace the placeholder links above with actual paths to your screenshots, e.g., `./assets/screenshot1.png`)*
 
