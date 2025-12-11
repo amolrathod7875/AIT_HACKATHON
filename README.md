@@ -103,7 +103,7 @@ We utilized the **Credit Card Fraud Detection and Loan Approval Prediction Datas
 * **Handling Imbalance:** Used SMOTE (Synthetic Minority Over-sampling Technique) to handle class imbalance.
 
 ### Loan Prediction
-* **Features Used:**'no_of_dependents','education','self_employed','income_annum','loan_amount','loan_term','cibil_score','residential_assets_value','commercial_assets_value','luxury_assets_value','bank_asset_value','loan_status'.
+* **Features Used:** No_of_dependents, Education, Self_employed, Income_annum, Loan_amount, Loan_term, Cibil_score, Residential_assets_value, Commercial_assets_value, Luxury_assets_value, Bank_asset_value, Loan_status.
 * **Accuracy:** Achieved ~98% accuracy on the test set.
 * **Algorithm:** XGBClassifier.
 
