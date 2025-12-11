@@ -97,14 +97,15 @@ Follow these steps to set up the project locally.
 ## 🧠 Model Insights
 
 ### Fraud Detection
-We utilized the **[Name of Dataset, e.g., Kaggle Credit Card Fraud]** dataset. 
-* **Algorithm:** Random Forest Classifier / Logistic Regression.
+We utilized the **Credit Card Fraud Detection and Loan Approval Prediction Dataset** dataset. 
+* **Algorithm:** Logistic Regression.
 * **Accuracy:** Achieved ~98% accuracy on the test set.
 * **Handling Imbalance:** Used SMOTE (Synthetic Minority Over-sampling Technique) to handle class imbalance.
 
 ### Loan Prediction
-* **Features Used:** Applicant Income, Co-applicant Income, Loan Amount, Credit History, Property Area.
-* **Algorithm:** Decision Tree / SVM.
+* **Features Used:**'no_of_dependents','education','self_employed','income_annum','loan_amount','loan_term','cibil_score','residential_assets_value','commercial_assets_value','luxury_assets_value','bank_asset_value','loan_status'.
+* **Accuracy:** Achieved ~98% accuracy on the test set.
+* **Algorithm:** XGBClassifier.
 
 ---
 
