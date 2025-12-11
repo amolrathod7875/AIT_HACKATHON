@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5 text-center">
+    <div class="row justify-content-center">
+        <div class="col-md-6 animate-up">
+            <div class="card glass-card p-5 border-{{ status }}">
+                
+                {% if status == 'success' %}
+                    <i class="fas fa-check-circle fa-5x text-success mb-3"></i>
+                {% else %}
+                    <i class="fas fa-exclamation-triangle fa-5x text-danger mb-3"></i>
+                {% endif %}
+
+                <h1 class="display-4 fw-bold text-{{ status }}">{{ msg }}</h1>
+                <hr>
+                <p class="lead">{{ details }}</p>
+                
+                <div class="mt-4">
+                    <a href="/" class="btn btn-outline-dark me-2">Back Home</a>
+                    <a href="/loan" class="btn btn-primary">Check Another Loan</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

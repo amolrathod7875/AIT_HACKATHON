@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-8 animate-up">
+            <div class="card glass-card p-5">
+                <h2 class="text-center mb-4 text-primary"><i class="fas fa-hand-holding-usd"></i> Loan Application</h2>
+                <form action="/predict_loan" method="POST">
+                    
+                    <h5 class="mb-3 text-muted">Personal Information</h5>
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <label>Dependents</label>
+                            <input type="number" name="no_of_dependents" class="form-control" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label>Education</label>
+                            <select name="education" class="form-select">
+                                <option value="1">Graduate</option>
+                                <option value="0">Not Graduate</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label>Self Employed?</label>
+                            <select name="self_employed" class="form-select">
+                                <option value="1">Yes</option>
+                                <option value="0">No</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <h5 class="mb-3 text-muted mt-4">Financial Details</h5>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label>Annual Income ($)</label>
+                            <input type="number" name="income_annum" class="form-control" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label>CIBIL Score</label>
+                            <input type="number" name="cibil_score" class="form-control" placeholder="300 - 900" required>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label>Loan Amount ($)</label>
+                            <input type="number" name="loan_amount" class="form-control" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label>Loan Term (Years)</label>
+                            <input type="number" name="loan_term" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <h5 class="mb-3 text-muted mt-4">Assets Valuation</h5>
+                    <div class="row mb-4">
+                        <div class="col-md-3"><label>Residential</label><input type="number" name="residential_assets_value" class="form-control" required></div>
+                        <div class="col-md-3"><label>Commercial</label><input type="number" name="commercial_assets_value" class="form-control" required></div>
+                        <div class="col-md-3"><label>Luxury</label><input type="number" name="luxury_assets_value" class="form-control" required></div>
+                        <div class="col-md-3"><label>Bank Assets</label><input type="number" name="bank_asset_value" class="form-control" required></div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100 py-3 fw-bold shadow">Predict Approval Status</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
