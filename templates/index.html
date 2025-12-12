@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container text-center mt-5">
+    <h1 class="hero-title mb-3">Secure Your Future</h1>
+    <p class="lead text-white mb-5 animate-up">AI-Powered Risk Assessment & Financial Security</p>
+    
+    <div class="row justify-content-center">
+        <div class="col-md-5 mb-4 animate-up delay-100">
+            <div class="card glass-card h-100 text-center p-4">
+                <div class="card-body">
+                    <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=500&auto=format&fit=crop&q=60" class="img-fluid rounded mb-3" alt="Loan" style="height: 200px; object-fit: cover;">
+                    <h3 class="fw-bold text-primary">Loan Approval</h3>
+                    <p class="text-muted">Check your loan eligibility instantly using our ML model.</p>
+                    <a href="/loan" class="btn btn-primary hero-btn mt-2">Check Eligibility <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-5 mb-4 animate-up delay-200">
+            <div class="card glass-card h-100 text-center p-4">
+                <div class="card-body">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=500&auto=format&fit=crop&q=60" class="img-fluid rounded mb-3" alt="Fraud" style="height: 200px; object-fit: cover;">
+                    <h3 class="fw-bold text-danger">Fraud Detection</h3>
+                    <p class="text-muted">Analyze transactions for suspicious activity patterns.</p>
+                    <a href="/fraud" class="btn btn-danger hero-btn mt-2">Analyze Risk <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
