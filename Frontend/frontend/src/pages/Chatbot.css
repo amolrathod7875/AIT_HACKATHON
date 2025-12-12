@@ -1,0 +1,80 @@
+/* Container: full-page background */
+.chatbot-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+
+  /* Background image */
+  background-image: url("../assets/Chatbot.png"); /* path relative to CSS file */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Chat Paper */
+.chatbot-paper {
+  width: 500px;
+  height: 400px;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: rgba(187, 222, 255, 0.95) !important; /* slightly transparent */
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(10,0,0,0.3);
+}
+
+/* Messages */
+.chatbot-paper p {
+  margin: 8px 0;
+}
+
+.chatbot-paper p b {
+  color: #000000;
+}
+
+/* Input area */
+.chatbot-input {
+  display: flex;
+  gap: 10px;
+  width: 500px;
+  margin-top: 15px;
+}
+
+/* TextField focus styles */
+.chatbot-input .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  border-color: #000000;
+}
+
+.chatbot-input .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #5974ff;
+}
+
+.chatbot-input .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #6f80ff;
+}
+.chatbot-paper p span {
+  color: #2a1a42;
+}
+/* Button */
+.chatbot-button {
+  background: linear-gradient(90deg, #5974ff, #f63838);
+  color: #fff !important;
+  font-weight: 600;
+  padding: 12px 20px;
+  transition: 0.3s ease;
+}
+
+.chatbot-button:hover {
+  background: linear-gradient(90deg, #f63838, #5974ff);
+}
+
+/* Title */
+.chatbot-container h4 {
+  color: #5974ff;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}

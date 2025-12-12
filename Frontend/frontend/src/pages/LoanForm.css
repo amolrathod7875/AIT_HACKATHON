@@ -1,0 +1,67 @@
+/* Container: full-page background */
+.loan-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Background image (adjust relative path to your image) */
+  background-image: url("../assets/Loan.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Container Paper */
+.loan-paper {
+  padding: 40px 30px;
+  width: 500px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  background-color: rgba(255, 255, 255, 0.95); /* Slight transparency */
+}
+
+/* Form Title */
+.loan-paper h5 {
+  font-weight: 700;
+  color: #5974ff;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* TextFields */
+.loan-paper .MuiTextField-root {
+  margin: 12px 0;
+}
+
+.loan-paper .MuiInputLabel-root.Mui-focused {
+  color: #5974ff;
+}
+
+.loan-paper .MuiOutlinedInput-root {
+  & fieldset {
+    border-color: #ccc;
+  }
+  &:hover fieldset {
+    border-color: #5974ff;
+  }
+  &.Mui-focused fieldset {
+    border-color: #51a4ed;
+  }
+}
+
+/* Button */
+.loan-button {
+  margin-top: 25px;
+  background: linear-gradient(90deg, #5974ff, #4289f3);
+  color: #fff !important;
+  font-weight: 600;
+  padding: 10px 0;
+  transition: 0.3s ease;
+}
+
+.loan-button:hover {
+  background: linear-gradient(90deg, #f63838, #5974ff);
+}

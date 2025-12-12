@@ -1,0 +1,68 @@
+/* Container: full-page background */
+.fraud-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Correct relative path from CSS to image */
+  background-image: url("../assets/Fraud.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* Container Paper */
+.fraud-paper {
+  padding: 40px 30px;
+  width: 500px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  background-color: rgba(96, 166, 241, 0.95); /* Slight transparency */
+}
+
+/* Form Title */
+.fraud-paper h5 {
+  font-weight: 700;
+  color: #5974ff;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* TextFields */
+.fraud-paper .MuiTextField-root {
+  margin: 12px 0;
+}
+
+.fraud-paper .MuiInputLabel-root.Mui-focused {
+  color: #5974ff;
+}
+
+.fraud-paper .MuiOutlinedInput-root {
+  & fieldset {
+    border-color: #62aef9;
+  }
+  &:hover fieldset {
+    border-color: #5974ff;
+  }
+  &.Mui-focused fieldset {
+    border-color: #5c5cff;
+  }
+}
+
+/* Button */
+.fraud-button {
+  margin-top: 25px;
+  background: linear-gradient(90deg, #5974ff, #3e93f9);
+  color: #fff !important;
+  font-weight: 600;
+  padding: 10px 0;
+  transition: 0.3s ease;
+}
+
+.fraud-button:hover {
+  background: linear-gradient(90deg, #4278f5, #5974ff);
+}
+
